@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #050B1E;
+    color: #CBD5E1;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* ==========================================================================
+   Scrollbar Personalizado Oscuro con Acento Cian
+   ========================================================================== */
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00D2FF #050B1E;
+}
+
+/* WebKit (Chrome, Edge, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050B1E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0F1E42;
+  border-radius: 9999px;
+  border: 2px solid #050B1E;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00D2FF;
+  box-shadow: 0 0 12px rgba(0, 210, 255, 0.6);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #0066FF;
+}
+
+::-webkit-scrollbar-corner {
+  background: #050B1E;
+}
