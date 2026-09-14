@@ -49,15 +49,22 @@ export const Navbar = () => {
           {/* Logotipo a la izquierda */}
           <a
             href="#"
-            className="flex flex-col group transition-transform duration-200 hover:scale-[1.02]"
+            className="flex items-center gap-3 group transition-transform duration-200"
             aria-label="Acceso Digital Premium - Inicio"
           >
-            <span className="font-heading font-extrabold text-lg sm:text-xl tracking-wider text-pureWhite flex items-center gap-1.5">
-              ACCESO DIGITAL
-            </span>
-            <span className="text-[10px] sm:text-xs font-heading font-bold text-goldMeta tracking-[0.35em] uppercase pl-0.5 -mt-1 group-hover:text-goldMeta/90 transition-colors">
-              PREMIUM
-            </span>
+            <img
+              src="/logo.png"
+              alt="Acceso Digital Premium"
+              className="h-11 w-11 object-contain rounded-full shadow-gold-glow hover:scale-105 transition-transform duration-300"
+            />
+            <div className="flex flex-col">
+              <span className="font-heading font-extrabold text-base sm:text-lg tracking-wider text-pureWhite flex items-center gap-1.5 leading-tight">
+                ACCESO DIGITAL
+              </span>
+              <span className="text-[10px] sm:text-xs font-heading font-bold text-goldMeta tracking-[0.35em] uppercase pl-0.5 group-hover:text-goldMeta/90 transition-colors leading-tight">
+                PREMIUM
+              </span>
+            </div>
           </a>
 
           {/* Enlaces Desktop */}

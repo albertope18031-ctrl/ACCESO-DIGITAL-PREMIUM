@@ -18,13 +18,20 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-darkSlate/80">
           {/* Columna 1: Marca y Propuesta de Valor */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="flex flex-col">
-              <span className="font-heading font-extrabold text-xl sm:text-2xl tracking-wider text-pureWhite">
-                ACCESO DIGITAL
-              </span>
-              <span className="text-xs font-heading font-bold text-goldMeta tracking-[0.35em] uppercase -mt-1">
-                PREMIUM
-              </span>
+            <div className="flex items-center gap-3.5">
+              <img
+                src="/logo.png"
+                alt="Acceso Digital Premium"
+                className="h-14 w-14 object-contain rounded-full shadow-gold-glow"
+              />
+              <div className="flex flex-col">
+                <span className="font-heading font-extrabold text-xl sm:text-2xl tracking-wider text-pureWhite leading-tight">
+                  ACCESO DIGITAL
+                </span>
+                <span className="text-xs font-heading font-bold text-goldMeta tracking-[0.35em] uppercase leading-tight">
+                  PREMIUM
+                </span>
+              </div>
             </div>
 
             <p className="text-sm text-coolGray max-w-sm leading-relaxed">
